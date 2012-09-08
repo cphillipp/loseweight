@@ -1,0 +1,399 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>LayerSlider WP - The WordPress Parallax Slider from Kreatura Media</title>
+		<link rel="stylesheet" href="../assets/SyntaxHighlighter/styles/shCoreEclipse.css" type="text/css">
+		<link rel="stylesheet" href="../assets/SyntaxHighlighter/styles/shThemeEclipse.css" type="text/css">
+		<link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+		<!--[if lt IE 9]>
+			<script src="../assets/js/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="dim">
+
+			<div class="page">
+				<div class="bg"></div>
+				<div class="inner">
+					<div class="doc">
+						<img id="doc_banner" src="../assets/img/doc_banner.png" alt="WeatherSlider Documentation">
+						<h1>LayerSlider WP 2.0.0</h1>
+						<h2>The WordPress Parallax Slider</h2>
+						<h3>Documentation</h3>
+						<ul>
+							<li>
+								<a href="#overview">Overview</a>
+								<ul>
+									<li><a href="#thankyou">Thank you</a></li>
+									<li><a href="#features">Features</a></li>
+									<li><a href="#changelog">Changelog</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#requirements">Requirements</a>
+								<ul>
+									<li><a href="#wordpress">WordPress</a></li>
+									<li><a href="#browsers">Browser Support</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#installation">Installation</a>
+							</li>
+							<li>
+								<a href="#usage">Usage</a>
+								<ul>
+									<li><a href="#creating_slider">Creating new slider</a></li>
+									<li><a href="#settings">Global Settings</a></li>
+									<li><a href="#wysiwyg">The WYSIWYG editor</a></li>
+									<li><a href="#creating_layers">Creating layers</a></li>
+									<li><a href="#creating_sublayers">Creating sublayers</a></li>
+									<li><a href="#setting_sublayers">Setting sublayers</a></li>
+									<li><a href="#advanced_options">Advanced options</a></li>
+									<li><a href="#setting_layers">Naming and reordering layers</a></li>
+									<li><a href="#linkto">How to add a link which jumps to another layer (linkTo)</a></li>
+									<li><a href="#videos">Embedding videos (YouTube and Vimeo)</a></li>
+									<li><a href="#usage_widget">Using the LayerSlider Widget</a></li>
+									<li><a href="#usage_shortcode">Using the LayerSlider Shortcode</a></li>
+									<li><a href="#insert_into_theme">Inserting LayerSlider into a Theme</a></li>
+									<li><a href="#import">Import or export your settings</a></li>
+								</ul>
+							</li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="page">
+				<div class="bg"></div>
+				<div class="inner">
+					<a name="overview"></a>
+					<h3>Overview</h3>
+					<h2 class="description">This is a WordPress plugin of the LayerSlider! You can create as many layers and sublayers as you want. You can use unlimited images with links. The script is very user-friendly, you can add global settings or local (per slide) settings to each layer or sublayer. You can change delay times, easing types, durations and much more.</h2>
+					<a name="thankyou"></a>
+					<h3>Thank you</h3>
+					<p>
+						Thank you for purchasing this product. If you have any questions that are beyond the scope of this documentation, please feel free to email us.
+					</p>
+					<a name="features"></a>
+					<h3>Features</h3>
+					<ul>
+						<li>Use with ANY content you want (images, HTML elements, Flash movies, YouTube videos, etc.)<br>(best view with semi-transparent PNG images or CSS3 styled HTML elements)</li>
+						<li>Sliding from / to 4 directions or fading in / out (sublayers only)</li>
+						<li>Unlimited number of layers / sublayers</li>
+						<li>Multiple animations and easing</li>
+						<li>Responsive layout</li>						
+						<li>Automatic slideshow function (optional: Backwards-Slideshow)</li>
+						<li>Image preload feature</li>
+						<li>Auto-play embedded YouTube and Vimeo videos (configurable)</li>
+						<li>Auto-pause slideshow while videos are playing</li>
+						<li>Auto-preview images to YouTube and Vimeo videos</li>
+						<li>Loops feature</li>
+						<li>Customizable UI</li>						
+						<li>WYSIWYG editor (Real-time dragging, reordering and styling layers and sublayers)</li>
+						<li>Now it's easy to add a link which jumps to another layer</li>						
+						<li>Powerful API with callback functions</li>						
+						<li>Keyboard navigation</li>
+						<li>Touch control for mobile devices (iOS tested)</li>
+						<li>yourLogo feature with link option</li>
+						<li>Skin support with 5 pre-defined skins</li>
+						<li>SEO friendly</li>
+						<li>Multiple browser support (IE 7+, Safari 3+, iOS Safari, Chrome 3+, Firefox 3+, Opera 10+)</li>
+						<li>Detailed Documentation with examples</li>
+						<li>WordPress-free version of the script is also included!</li>
+					</ul>
+					<a name="changelog"></a>
+					<h3>Changelog</h3>
+					<p>
+						2.0.0
+					</p>
+					<ul>
+						<li>added loops feature</li>
+						<li>added autoPlay feature for embedded YouTube and Vimeo videos</li>
+						<li>added autoPauseSlideshow feature while videos are playing</li>
+						<li>added auto-preview image feature to YouTube and Vimeo videos</li>
+						<li>added linkTo feature</li>
+						<li>added import / export feature</li>
+						<li>you can now easily add an ID to any sublayer</li>
+						<li>LayerSlider WP is now parsing shortcodes</li>
+						<li>added some GUI improvements</li>
+						<li>included two new skins</li>
+						<li>touch control now can be disabled</li>
+						<li>changed one layer mode (not duplicating it now)</li>
+						<li>fixed a wrong variable</li>
+						<li>fixed a wrong function in forceResponsive mode</li>						
+						<li>fixed yourLogo style settings, reset and yourLogoTarget</li>
+						<li>fixed global background setting</li>
+						<li>fixed saving method</li>
+						<li>changed from absolute to relative URLs</li>
+						<li>https aware</li>
+						<li>fixed a bug when a new image sublayer is reordered</li>
+						<li>fixed a bug in forceResponsive mode</li>
+						<li>the bottom side of the slider (next to the controls) is now clickable</li>
+						<li>a lot of minor bugfixes and improvements</li>
+					</ul>
+					<p>
+						1.8.0
+					</p>
+					<ul>
+						<li>facelifted admin page for better usage</li>	
+						<li>added an option to style your LayerSlider container from admin</li>
+						<li>added "auto" options by default to slidedirection and slideoutdirection properties of sublayers</li>
+						<li>added forceResponsive feature (LayerSlider WP now can "get out" from your wp theme, so it's width can be real responsive now)</li>
+						<li>changed back to normal PHP opening tags from short opening tags</li>
+						<li>fixed the "create new slider" width bug</li>
+						<li>fixed some animations</li>
+						<li>reset buttons now real-time modifying backgrounds</li>
+						<li>added background-images of layers to preload</li>
+						<li>modified some CSS styles</li>
+						<li>some parts of the source code rewritten</li>
+						<li>added yourLogoLink feature</li>
+						<li>added yourLogoTarget feature</li>
+						<li>added noskin feature</li>
+					</ul>
+					<p>
+						1.7.0
+					</p>
+					<ul>
+						<li>fixed fading bug (sublayers now appears if sliding in after fading out)</li>
+						<li>fixed preload bug with sublayers with gradient backgrounds</li>
+						<li>fixed working delayout of layers (From now, if you add a delayout to a layer, sublayers of that layer will be animating out immediately, but the layer (and the next layer) will be delayed by the delayout time of the current layer. So, you can animate out all sublayers BEFORE the parent layer will begin the animation.)</li>
+						<li>fixed imagepreload bug</li>
+						<li>added an option to animating the first slide instead of fading in</li>
+						<li>the script is now fully responsive! (You can add % instead of pixels to left and top properties of sublayers and width or height properties of LayerSlider container.)</li>
+						<li>fixed globalimage bug</li>
+						<li>added LayerSlider API Callback functions to WYSIWYG editor</li>
+						<li>added yourLogo feature (You can now display your fixed logo above the LayerSlider container.)</li>
+						<li>some minor bugfixes and improvements</li>
+					</ul>
+					<p>
+						1.6.0
+					</p>
+					<ul>
+						<li>now supports any HTML content with CSS styling!</li>
+						<li>now sublayers supports fading transition</li>
+						<li>added slideoutdirection property to sublayers</li>
+						<li>added global background color / background image support</li>
+						<li>added a possibility to name and reorder layers</li>
+						<li>fixed LayerSlider widget</li>
+						<li>fixed '1px gap' bug</li>
+						<li>fixed one layer bug</li>
+						<li>fixed empty sublayer bug</li>
+						<li>fixed swing, linear and easeInOutQuint animations</li>
+						<li>fixed hover on pause / stop bug</li>
+						<li>fixed wrong directions of animations if navigating by slidebuttons</li>
+						<li>fixed durationout property for sublayers</li>
+						<li>fixed reordering sublayers</li>
+					</ul>
+					<p>
+						1.5.1
+					</p>
+					<ul>
+						<li>minor bugfixes</li>
+					</ul>
+					<p>
+						1.5.0
+					</p>
+					<ul>
+						<li>first release</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="page">
+				<div class="bg"></div>
+				<div class="inner">
+					<a name="requirements"></a>
+					<h3>Requirements</h3>
+					<a name="php"></a>
+					<a name="wordpress"></a>
+					<h3>WordPress</h3>
+					<ul>
+						<li>WordPress 3.0+</li>
+					</ul>
+					<a name="browsers"></a>
+					<h3>Browser Support</h3>
+					<ul>
+						<li>Mozilla Firefox 3+</li>
+						<li>Google Chrome 10+</li>
+						<li>Safari 3+</li>
+						<li>iOS Safari</li>
+						<li>Opera 10+</li>
+						<li>Internet Explorer 7+</li>
+					</ul>
+					<p>
+						Note: in old browsers some animations (for example fading the transparent PNGs) are missing, but the plugin is fully functional.
+					</p>
+				</div>
+			</div>
+			
+			<div class="page">
+				<div class="bg"></div>
+				<div class="inner">
+					<a name="installation"></a>
+					<h3>Installation</h3>
+					<p>1. - Copy the layerslider-wordpress-plugin/<span class="hl">LayerSlider</span> folder into your WordPress wp-content/plugins/ folder using your favorite FTP program.</p>
+					<p>2. - Go to your WordPress "Manage Plugins" page, find the "LayerSlider" in your plugins list and click on activate.</p>
+					<p>Once the plugin has been activated you will notice a new menu on the side called "LayerSlider" enabling you to manage the options for the plugin.</p>
+					<p>3. - It is important to create a folder named uploads with write permissions in wp-content - if you didn't have it already.
+					</p>
+				</div>
+			</div>
+
+			<div class="page">
+				<div class="bg"></div>
+				<div class="inner">
+					<a name="usage"></a>
+					<h3>Usage</h3>
+					<a name="creating_slider"></a>
+					<h4>Creating new slider</h4>
+					<p>
+						You can create unlimited sliders. Of course, each slider can have different settings and layers. If you create a new one you will see first the global settings page of this slider.
+					</p>
+					<a name="settings"></a>
+					<h4>Global Settings</h4>
+					<p>
+						You can modify the global settings of each slider. You can set the width / height and other properties. For more information, please <a href="documentation.html">read the complete documentation</a> of the script.
+					</p>
+					<a name="wysiwyg"></a>
+					<h3>The WYSIWYG editor</h3>
+					<h2 class="description">We created an editor where you can easily upload your images (which can be sublayers), or you can add custom HTML codes. You can set the order and positions of the sublayers too by dragging them to anywhere inside the layer. You can set almost every settings with simple point and click.</h2>
+					<a name="creating_layers"></a>
+					<h4>Creating layers (slides)</h4>
+					<p>
+						To create a new layer, click on <span class="hl">Add New Layer</span> button.
+					</p>
+					<p>
+						A new box will appear with some inputs and select boxes. To add a background to this layer, click into the input of the Background. In the popup window you can upload your picture, or you can browse the previously uploaded pictures on the Media Library tab. Choose a picture, scroll down and click on the <span class="hl">Insert into Post</span> button.<br>
+						The selected picture will appear as the background of the current layer.
+					</p>
+					<p>
+						After that you can edit the settings of the layer for example <span class="hl">SlideDirection</span>, <span class="hl">Durations</span>, etc.
+					</p>
+					<a name="creating_sublayers"></a>
+					<h4>Creating sublayers</h4>
+					<p>
+						You will notice, that there is an empty sublayer also. You can change the type of the sublayer. It can be image or some other pre-defined HTML elements, like div, p, span and heading tags. If you want to add a custom HTML element, select div, and type your own html code into the HTML input. You add custom CSS styles to HTML elements by adding them to Style input like in CSS, for example: <span class="hl">width: 300px; color: #fff;</span> ...
+					</p>
+					<p>
+						If you choose image as a type of sublayer, click into the input of Image and upload an image or choose it from Media Library. After that you can add a link to this sublayer if you want. You can set the target of the link of course.
+					</p>
+					<p>
+						As you can see, there are many settings available for sublayers. The most of them are self-evident, but you can find all in <a href="documentation.html">the complete documentation</a> except one, this is P.level.
+					</p>
+					<p>
+						<span class="hl">P.level</span> means Parallax Level and it is a positive integer. The script uses this number to show Parallax Effect correctly. Sublayers with higher number will be animating from farther - seems like animating faster - and sublayers with lower number will animating slower. If you want to create a realistic effect, try to increase this number by two per sublayer. For example: 2, 4, 6 ,8 ...
+					</p>
+					<p>
+						You can create as many sublayers you want by clicking the <span class="hl">Add New Sublayer</span> button.
+					</p>
+					<a name="setting_sublayers"></a>
+					<h4>Setting the orders and the positions of layers and sublayers</h4>
+					<p>
+						You can set the position of a sublayer by setting the value of the left and top input fields. You can set their position also by dragging them. To do this, select the sublayer by clicking the first checkbox of the row. You'll notice, that all other sublayers will be semi-transparent. Now you can drag and move the selected sublayer to the required position. If you want to change the order of the layers, grab the whole row with this handler <img src="../layerslider-wordpress-plugin/LayerSlider/img/move.png" alt="handler"> and drag it up or down.
+					</p>
+					<p>
+						Of course you can remove layers, sublayers or sliders too.
+					</p>
+					<p>
+						<span class="hl">IMPORTANT: Don't forget to click on the Save Changes button if you are ready with the settings!</span>
+					</p>
+					<a name="advanced_options"></a>
+					<h4>Advanced options of sublayers</h4>
+					<p>
+						We hide some of the sublayer options which you don't need often. You can display these options by clicking the Show Advanced Options button.
+					</p>
+					<a name="setting_layers"></a>
+					<h4>Naming and reordering layers</h4>
+					<p>
+						You can add a name to any layer and you can reorder them by clicking the <span class="hl">Reorder Layers</span> button. Don't forget to <span class="hl">Save Changes</span> after you finish reordering.
+					</p>
+					<a name="linkto"></a>
+					<h4>How to add a link which jumps to another layer (linkTo)</h4>
+					<p>
+						From version 2.0 you can easily add a special link to any sublayer which jumps to the selected layer of the slider. You don't have to write any JS code, just specify the ordinary number of the layer and write into the Link field by the following way:
+					</p>
+					<p>
+						<span class="hl">#3</span> - which means, LayerSlider WP will jump to the third layer if you click on this sublayer.
+					</p>
+					<a name="videos"></a>
+					<h4>Embedding Videos (YouTube and Vimeo)</h4>
+					<p>
+						We want to show an example how to create a layer with an embedded video sublayer. LayerSlider WP works with embed codes of many video sharing websites, but we created some features to improve the work with two most popular sites: YouTube and Vimeo.
+					</p>
+					<p>So, how to put your video into a layer?</p>
+					<p>
+						It is very simple: you will need to create a DIV sublayer and put your video embed code into the HTML field of this sublayer. That's it!
+					</p>
+					<a name="usage_widget"></a>					
+					<h3>Using the LayerSlider Widget</h3>
+					<p>
+						Drag &amp; Drop the Widget to the area of your theme where you want this should be placed.
+					</p>
+					<a name="usage_shortcode"></a>
+					<h3>Using the LayerSlider Shortcode</h3>
+					<p>
+						You can use a shortcode too to display a LayerSlider widget in any page or post.
+					</p>
+					<pre name="code" class="brush: xml">
+						[layerslider id="1" title="LayerSlider"]</pre>
+					<p>
+						The id is the number of the slider. (You can find this number in the title of each slider tab at the admin page.) The title parameter is optional.
+					</p>
+					<a name="insert_into_theme"></a>
+					<h3>Inserting LayerSlider into a Theme</h3>
+					<p>
+						You can insert LayerSlider into a Theme by the following way:
+					</p>
+					<pre name="code" class="brush: php">
+						&lt;?= do_shortcode('[layerslider id="1"]'); ?&gt;</pre>
+					<p>
+						If you want to define a new widget area, follow the instructions here: <a target="_blank" href="http://codex.wordpress.org/Widgetizing_Themes">http://codex.wordpress.org/Widgetizing_Themes</a>
+					</p>
+					<a name="import"></a>
+					<h3>Import or export your settings</h3>
+					<p>
+						To export your current settings and import them to your another site, do the following:
+					</p>
+					<ul>
+						<li>Click on the Import / Export Settings button to show the settings panel.</li>
+						<li>You can see your current settings (coded with base64) in Export settings field.</li>
+						<li>Select and copy the whole string to your clipboard.</li>
+						<li>Open LayerSlider WP Admin Page on your new site and paste the code into the Import settings field.</li>
+						<li>Click on the Import button below.</li>
+					</ul>
+					<p>
+						IMPORTANT: You can export / import only your settings with this method and you have to upload all your images (which are used in your slider) to you new site. Or you can move your whole uploads folder (from wp-content) with all of your images via FTP to your new site.
+					</p>
+				</div>
+			</div>
+			
+			<div class="page">
+				<div class="bg"></div>
+				<div class="inner">
+					<a name="contact"></a>
+					<h3>Contact us!</h3>
+					<h2 class="description">
+						If you like our works.<br>
+						If you need a help in using one of our CodeCanyon items.<br>
+						If you have a great idea which we can work together.
+					</h2>
+					<nav>
+						<a id="kmlogo" href="http://kreaturamedia.com/"></a><span>Visit our website!</span>
+						<a id="fblogo" href="http://facebook.com/kreaturamedia/"></a><span>Find us on Facebook!</span>
+						<a id="cclogo" href="http://codecanyon.net/user/kreatura?ref=kreatura"></a><span>Our Apps &amp; Codecanyon</span>
+						<div class="clear"></div>
+					</nav>
+				</div>
+			</div>
+			
+		</div>
+		<script src="../layerslider/jQuery/jquery-1.6.2.min.js" type="text/javascript"></script>
+		<script src="../assets/js/documentation.js" type="text/javascript"></script>
+		<script src="../assets/SyntaxHighlighter/scripts/shCore.js" type="text/javascript"></script>
+		<script src="../assets/SyntaxHighlighter/scripts/shBrushJScript.js" type="text/javascript"></script>
+		<script src="../assets/SyntaxHighlighter/scripts/shBrushXml.js" type="text/javascript"></script>
+		<script src="../assets/SyntaxHighlighter/scripts/shBrushCss.js" type="text/javascript"></script>
+		<script src="../assets/SyntaxHighlighter/scripts/shBrushPhp.js" type="text/javascript"></script>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+*** WooSlider Changelog ***
+
+2012.08.07 - version 1.0.1
+ * /classes/class-wooslider.php - Check if WooThemes_Plugin_Updater class exists to avoid plugin updater conflicts. Add "post-thumbnails" support if the theme doesn't natively support it.
+ * /classes/class-wooslider-frontend.php - Bump "wooslider-common" stylesheet version to 1.0.1. Make sure "autoslide" can be disabled via the shortcode.
+ * /classes/class-wooslider-sliders.php - Make sure the postdata is reset correctly after retrieving the slides for the "slides" slideshow type.
+ * /assets/css/flexslider.css - Move slideshow-specific styles to "style.css". Adjust styling of the "active" CSS classes to be "wooslider-active" in accordance with FlexSlider version 2.1 update.
+ * /assets/css/style.css - Add slideshow-specific styles from "flexslider.css". Fixed image and excerpt z-index.
+ * /assets/js/jquery.flexslider-min.js - Upgrade FlexSlider to version 2.1.
+ * /lang/en_GB.po - Rescan language translation file.
+
+2012.08.07 - version 1.0.0
+ * First release. Woo!

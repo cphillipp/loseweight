@@ -1,0 +1,573 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Avada Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Avadao&rdquo; Documentation by &ldquo;ThemeFusion&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Avada&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 14th August, 2012<br>
+					By: <a href='http://themeforest.net/user/ThemeFusion'>Theme Fusion</a><br>
+					<a href="http://theme-fusion.com/forum">Support Forum</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to post a support question on our forum <a href="http://theme-fusion.com/forum">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#importantInfo">Important Info</a></li>
+			<li><a href="#basicInstallation">Basic Installation</a></li>
+			<li><a href="#migration">Migration from a theme</a></li>
+			<li><a href="#homepage">Setting up Homepage</a></li>
+			<li><a href="#homepageblog">Setting up Blog Page</a></li>
+			<li><a href="#slider">How to setup sliders</a></li>
+			<li><a href="#aboutservices">Setting up About/Services Page</a></li>
+			<li><a href="#contact">Setting up Contact page</a></li>
+			<li><a href="#faqs">Setting up FAQs page</a></li>
+			<li><a href="#side">Setting up Side Navigation</a></li>
+			<li><a href="#portfolio">Setting up Portfolio page</a></li>
+			<li><a href="#menus">Menus</a></li>
+			<li><a href="#widgets">Custom Widgets &amp; Locations</a></li>
+			<li><a href="#themeoptions">Theme Options</a></li>
+			<li><a href="#shortcodes">Shortcodes</a></li>
+			<li><a href="#thumbs">Post Thumbnails</a></li>
+			<li><a href="#slideshow"><strong>How to setup post slideshow</strong></a></li>
+			<li><a href="#translate">How to Translate</a></li>
+			<li><a href="#css">CSS</a></li>
+			<li><a href="#javascript">Javascript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr />
+
+		<h3 id="importantInfo"><strong>Important Info</strong> - <a href="#toc">top</a></h3>
+
+		<h4>Museo Slab 500 Heading font</h4>
+
+		<p>Museo Slab 500 is the font used for all headings in our demo. It is a free font, but it is not allowed to be distributed commercially. Please use the link below to download the font. Be sure you are selecting the "Museo Slab 500" version, it is the only one that is $0. The other Museo Slab fonts cost money.</p>
+
+		<p><a href="http://www.fontspring.com/fonts/exljbris/museo-slab">http://www.fontspring.com/fonts/exljbris/museo-slab</a></p>
+
+		<p>After downloading the font, <strong>install the theme</strong>, upload the font files in the "fonts" folder which is already created within the theme folder. Make sure you don't upload the Museo Slab folder but ALL the font files extracted from the museo slab download.</p>
+
+		<p>To activate Museo Slab, navigate to WP Admin -> Theme Options -> Appearance and select "Museo Slab" from headings font option.</p>
+
+		<hr />
+		
+		<h3 id="basicInstallation"><strong>Basic Installation</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To install this theme you must have a working version of WordPress already installed. For information in regard to installing the WordPress platform, please see the WordPress Codex - <a href="http://codex.wordpress.org/Installing_WordPress">http://codex.wordpress.org/Installing_WordPress</a></p>
+
+		<p>Extract the zipped package downloaded from ThemeForest to your desktop, in the extracted package you will find Advance.zip file which is the wordpress theme.</p>
+
+		<p>You can install the theme in two ways:</p>
+		
+		<ul>
+			<li>
+				<p><strong>FTP:</strong> Extract Avada.zip file and upload the extracted folder to <strong>/wp-content/themes/</strong> folder on your server.</p>
+				<p><strong>WordPress:</strong> Navigate to <strong>Appearance -> Add New Themes -> Upload</strong> page. Select Avada.zip file. Press the <strong>Install Now</strong> button to upload and install the theme.</p>
+			</li>
+		</ul>
+		
+		<p>After uploading the theme, you have to activate it. Navigate to <strong>Appearence -> Themes</strong> page to activate the theme.</p>
+		
+		<hr />
+		
+		<h3 id="migration"><strong>Migration from a theme</strong> - <a href="#toc">top</a></h3>
+		
+		<p>If you are migration from a theme which used the native featured images functionality of WordPress. Please use <a href='http://wordpress.org/extend/plugins/regenerate-thumbnails/'>Regenerate Thumbnails</a> plugin to resize all the thumbnails.</p>
+		
+		<hr />
+
+		<h3 id="homepage"><strong>Setting up the Homepage</strong></h3>
+
+		<p>Homepages are built through a combination of shortcodes as seen of the demo. To setup similar homepages, create a new page with "Full Width" page template and paste the following code in the <strong>HTML</strong> editor.</p>
+
+		<p><img src="assets/images/full-width-template.png" alt="" /></p>
+
+		<p><strong>Homepage 1:</strong></p>
+
+		<p><textarea>[tagline_box link="http://themeforest.net/user/ThemeFusion" button="Purchase Now" title="Avada is incredibly responsive, with a refreshingly clean design" description="And it has some awesome features, premium sliders, unlimited colors, advanced theme options and so much more!"][/tagline_box]
+
+[content_boxes]
+[content_box title="Responsive Design" image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-02.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]Avada is fully responsive and can adapt to any screen size. Try resizing your browser window to see the adaptation.[/content_box]
+[content_box title="Awesome Sliders" image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-02.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]Avada includes the awesome Layer Parallax Slider as well as the popular FlexSlider2. Both are super easy to use![/content_box]
+[content_box title="Unlimited Colors"  image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-03.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]We included a backend color picker for unlimited color options. Anything can be changed, including the gradients![/content_box]
+[content_box last="yes" title="500+ Google Fonts"  image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-04.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]Avada loves fonts, choose from over 500+ Google Fonts. You can change all headings and body copy with ease![/content_box]
+[/content_boxes]
+
+[three_fourth last="no"]
+<div class="title">
+<h2>Latest From The Blog</h2>
+</div>
+[recent_posts thumbnail="yes" title="yes" meta="yes" excerpt="yes"][/recent_posts]
+[/three_fourth]
+
+[one_fourth last="yes"]
+<div class="title">
+<h2>What Client’s Say</h2>
+</div>
+[testimonial name="John Doe" company="My Company"]Neque porro quisquam est, dolorem ipsum quia dolor sit amet, consec tetur, adipi velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptis.[/testimonial]
+[/one_fourth]</textarea></p>
+
+
+		<p><strong>Homepage 2:</strong></p>
+
+		<p><textarea>[content_boxes]
+[content_box title="Responsive Design" image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-01.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]Avada is fully responsive and can adapt to any screen size, its incredibly flexible. Try resizing your browser window to see the adaptation in action.[/content_box]
+[content_box title="Awesome Sliders" image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-02.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]Avada includes the awesome Layer Parallax Slider as well as the popular FlexSlider2. Both of the sliders have awesome plugins making it super easy to use.[/content_box]
+[content_box last="yes" title="Unlimited Colors"  image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-03.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]We included a backend color picker for unlimited color options. Any of the elements can be changed, including the super awesome CSS3 gradients![/content_box]
+[/content_boxes]
+
+<div class="title">
+<h2>Recent Work</h2>
+</div>
+
+[recent_works][/recent_works]
+
+&nbsp;
+
+[one_half last="no"]
+
+<div class="title">
+<h2>Why Choose Us</h2>
+</div>
+<ul class="arrow">
+	<ul class="arrow">
+	<li>Fully responsive so your content will always look good on any screen size</li>
+	<li>Awesome sliders give you the opportunity to showcase your important content</li>
+	<li>Unlimited color options with a backed color picker, including the gradients</li>
+	<li>Multiple layout options for the home pages, portfolio section and blog section</li>
+	<li>We offer free support because we care about your site just as much as you do.</li>
+</ul>
+[/one_half]
+
+[one_half last="yes"]
+
+<div class="title">
+<h2>What Client's Say</h2>
+</div>
+
+[testimonials]
+[testimonial name="John Doe" company="My Company"]Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetursir, adipisci velit, sed quia non numquam eius voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit estas laboriosam, nisi ut aliquid ex ea commodi consequatur slores amet untras iumuis sdaip dolores amet untras uns voluptas.[/testimonial]
+[testimonial name="Luke Beck" company="Theme Fusion"]Aliquam erat volutpat. Quisque at est id ligula facilisis laoreet eget pulvinar nibh. Suspendisse at ultrices dui ipsum quia dolor sit amet, consec teturis, adipisci velit, sed quia non numquam eius voluptatem. Curabitur ac felarcu quisquam est, qui dolorem ipsum quia dolor sit amet.[/testimonial]
+[/testimonials]
+[/one_half]</textarea></p>
+
+
+		<p><strong>Homepage 3:</strong></p>
+
+		<p><textarea>[one_third last="no"]
+<img src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/feature3.jpg" alt="" width="576" height="328" />
+<h2>Ultra-Responsive Design</h2>
+Avada is fully responsive and can adapt to any screen size, its incredibly fast and flexible. Try resizing your browser window to see the adaptation in action.
+
+[/one_third]
+
+[one_third last="no"]
+<img src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/feature2.jpg" alt="" width="576" height="328" />
+<h2>Awesome Powerful Sliders</h2>
+Avada includes the awesome Layer Parallax Slider as well as the popular FlexSlider2. Both of the sliders have awesome plugins making it super easy to use.
+
+[/one_third]
+
+[one_third last="yes"]
+<img src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/feature1.jpg" alt="" width="576" height="328" />
+<h2>Loaded With Options</h2>
+This theme is loaded, unlimited color options, 500+ google fonts, 4 post types, advanced theme options, 3 home page layouts, boxed & wide to name a few.
+
+[/one_third]
+
+<div style="margin-top:50px;" class="demo-sep">&nbsp;</div>
+
+[one_half last="no"]
+
+[tabs tab1="Tab Data #1" tab2="Tab Data #2" tab3="Tab Data #3"]
+
+[tab id=1]
+<a href="http://themeforest.net/user/ThemeFusion"><img class="alignleft size-full wp-image-212" style="padding-bottom: 1em;" title="tab-photo" src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/tab_photo.jpg" alt="" width="126" height="106" /></a>Lid est laborum dolo rumes fugats untras. Etha rums ser quidem rerums facilis dolores nemis onis fugats vitaes nemo minima rerums unsers sadips amets. Ut enim ad minim veniam, quis nostrud Neque porro quisquam.
+
+[/tab]
+[tab id=2]Lid est laborum dolo rumes fugats untras. Etha rums ser quidem rerum facilis dolores nemis onis fugats vitaes nemo minima rerums unsers sadips amets. Ut enim ad minim veniam, quis nostrud Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci amets uns.  Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips ameet quasi architecto beatae vitae dicta sunt explicabo. amets dolores.[/tab]
+[tab id=3]Lid est laborum dolo rumes fugats untras. Etha rums ser quidem rerum facilis dolores nemis onis fugats vitaes nemo minima rerums unsers sadips amets. Ut enim ad minim veniam, quis nostrud Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci amets uns.  Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips ameet quasi architecto beatae vitae dicta sunt explicabo. amets dolores.[/tab]
+
+[/tabs]
+
+[/one_half]
+
+[one_half last="yes"]
+<div class="title">
+<h2>Why Choose Us?</h2>
+</div>
+<ul class="arrow">
+	<ul class="arrow">
+	<li>Fully responsive so your content will always look good on any screen size</li>
+	<li>Awesome sliders give you the opportunity to showcase your important content</li>
+	<li>Unlimited color options with a backed color picker, including the gradients</li>
+	<li>Multiple layout options for the home pages, portfolio section and blog section</li>
+	<li>We offer free support because we care about your site just as much as you do.</li>
+</ul>
+[/one_half]
+<div class="title" style="margin-top:40px;">
+<h2>Our Happy Clients</h2>
+</div>
+<a href="#"><img class="alignnone size-full wp-image-259" title="logo_plate" src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/logo_plate.png" alt="" width="940" height="72" /></a></textarea></p>
+
+		<p>To setup one of these pages as Homepage, navigate to WP Admin -> Settings -> Reading Settings and set the newly created page as front page.</p>
+
+		<p><img src="assets/images/reading-settings.png" alt="" /></p>
+
+		<hr />
+
+		<h3 id="slider"><strong>How to setup Sliders</strong></h3>
+
+		<p>Avada supports two types of slides, LayerSlider and FlexSlider. Both of the sliders can be added to any page. Add / Edit any page and scrolldown until you see page options. The slider options are located there. Screenshot:</p>
+
+		<p><img src="assets/images/page-options.png" alt="" width="790" /></p>
+
+		<p><strong>FlexSlider</strong></p>
+
+		<p>To setup flexslider, follow:</p>
+
+		<ul>
+			<li>Navigate to FlexSlider WP -> Slider Groups and create a new group for slides.</li>
+			<li>Add new slides to the group</li>
+			<li>Insert the slider content in the content box. It can be image, text or video.</li>
+			<li>Select the FlexSlider group on the WP page.</li>
+		</ul>
+
+		<p><strong>LayerSlider WP</strong><p>
+
+		<p>LayerSlider WP is a bit more complicated to setup. Navigate to LayerSlider WP and a create a new slider. Make sure in the settings box the width is 100% and skin name is "avada".</p>
+
+		<p>To create new slides, click on Add New Layer button and to add new content and animations over it, click on add new sub layer button. We have included flexslider documentation within the downloadable package, please refer to that for more info on how to setup layers / sublayers.</p>
+
+		<p>After setting up slider, you can select the LayerSlider number from the WP page options as previously described.</p>
+
+		<hr />
+
+		<h3 id="homepageblog"><strong>Setting up the Blog page</strong></h3>
+
+		<p>Create a new page, empty content, a placeholder for blog page.</p>
+
+		<p>Navigate to WP Admin -> Settings -> Reading and change the posts page to the placeholder page for blog you just created. Posts will show up on the blog page.<p>
+
+		<p><img src="assets/images/reading-settings.png" alt=""  /></p>
+
+		<hr />
+
+		<h3 id="aboutservices"><strong>Setting up the About Us / Services Page</strong></h3>
+
+		<p>Create a new page with full width template and paste the following code in the HTML editor:</p>
+
+		<p><strong>About Us:</strong><p>
+
+		<p><textarea>[one_half last="no"]
+
+[slider][slide]http://theme-fusion.com/avada/wp-content/uploads/2012/08/about_1.jpg[/slide][slide type="video"]<iframe src="http://player.vimeo.com/video/46664156" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>[/slide][slide link="http://google.com"]http://theme-fusion.com/avada/wp-content/uploads/2012/08/about_2.jpg[/slide] [slide]http://theme-fusion.com/avada/wp-content/uploads/2012/08/about_3.jpg[/slide][/slider]
+
+[/one_half]
+[one_half last="yes"]
+<div class="title">
+<h2>Welcome to Avada</h2>
+</div>
+Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+
+[/one_half]
+
+[one_half last="no"]
+<div class="title">
+<h2>Who is Avada?</h2>
+</div>
+[toggle title="Our Company Mission"]Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.[/toggle]
+[toggle title="The Avada Philosophy"]Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.[/toggle]
+[toggle title="The Avada Promise"]Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.[/toggle]
+[toggle title="We Can Deliver On Projects"]Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.[/toggle]
+
+[/one_half]
+
+[one_half last="yes"]
+<div class="title">
+<h2>Our Crazy Skills</h2>
+</div>
+<div id="progress-bars">[progress percentage="90"]Web Design[/progress][progress percentage="95"]HTML/CSS[/progress]
+
+[progress percentage="85"]Graphic Design[/progress]
+
+[progress percentage="75"]WordPress[/progress]
+
+</div>
+[/one_half]
+<div class="title" style="margin-top: 60px;">
+<h2>Meet Our Team</h2>
+</div>
+[one_third last="no"]
+
+[person name="John Doe" picture="http://theme-fusion.com/avada/wp-content/uploads/2012/08/team1.jpg" title="Developer" facebook="http://facebook.com" twitter="http://twitter.com" linkedin="http://linkedin.com" dribbble="http://dribbble.com"]Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enim.[/person]
+
+[/one_third]
+
+[one_third last="no"]
+
+[person name="John Doe" picture="http://theme-fusion.com/avada/wp-content/uploads/2012/08/team2.jpg" title="Developer" facebook="http://facebook.com" twitter="http://twitter.com" linkedin="http://linkedin.com" dribbble="http://dribbble.com"]Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enim.[/person]
+
+[/one_third]
+
+[one_third last="yes"]
+
+[person name="John Doe" picture="http://theme-fusion.com/avada/wp-content/uploads/2012/08/team3.jpg" title="Developer" facebook="http://facebook.com" twitter="http://twitter.com" linkedin="http://linkedin.com" dribbble="http://dribbble.com"]Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enim.[/person]
+
+[/one_third]
+<div class="title" style="margin-top: 60px;">
+<h2>Our Happy Clients</h2>
+</div>
+<a href="#"><img class="alignnone size-full wp-image-259" title="logo_plate" src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/logo_plate.png" alt="" width="940" height="72" /></a></textarea></p>
+
+		<p><strong>Services:</strong><p>
+
+		<p><textarea>[one_half last="no"]
+
+[slider][slide]http://theme-fusion.com/avada/wp-content/uploads/2012/08/service1.jpg[/slide][slide type="video"]<iframe width="560" height="315" src="http://www.youtube.com/embed/UX7GycmeQVo" frameborder="0" allowfullscreen></iframe>[/slide][slide link="http://google.com"]http://theme-fusion.com/avada/wp-content/uploads/2012/08/service2.jpg[/slide] [slide]http://theme-fusion.com/avada/wp-content/uploads/2012/08/service3.jpg[/slide][/slider]
+
+[/one_half]
+[one_half last="yes"]
+<div class="title">
+<h2>Avada’s Four Areas of Expertise</h2>
+</div>
+Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+
+[/one_half]
+
+[content_boxes]
+[content_box title="Responsive Design" image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-02.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]Avada is fully responsive and can adapt to any screen size. Try resizing your browser window to see the adaptation.[/content_box]
+[content_box title="Awesome Sliders" image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-02.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]Avada includes the awesome Layer Parallax Slider as well as the popular FlexSlider2. Both are super easy to use![/content_box]
+[content_box title="Unlimited Colors"  image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-03.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]We included a backend color picker for unlimited color options. Anything can be changed, including the gradients![/content_box]
+[content_box last="yes" title="500+ Google Fonts"  image="http://theme-fusion.com/avada/wp-content/uploads/2012/07/ico-04.gif" link="http://themeforest.net/user/ThemeFusion" linktext="Learn More"]Avada loves fonts, choose from over 500+ Google Fonts. You can change all headings and body copy with ease![/content_box]
+[/content_boxes]
+<div class="title">
+<h2>Avada’s Other Services</h2>
+</div>
+<p style="margin-bottom: 30px;">Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores tium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archgit, magnam aliquam quaerat voluptatem. Asunt in anim uis aute irure dolor ins. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minimaser.</p>
+[tabs tab1="Service #1" tab2="Service #2" tab3="Service #3"]
+
+[tab id=1]
+<div class="alignleft" style="width: 100%; margin-right: 0;">
+
+Lid est laborum dolo rumes fugats untras. Etha rums ser quidem rerum facilis dolores nemis onis fugats vitaes nemo minima rerums unsers sadips amets. Ut enim ad minim veniam, quis nostrud Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci amets uns.  Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips ameet quasi architecto beatae vitae dicta sunt explicabo. amets dolores.
+
+<a href="http://isharis.dnsalias.com/wp-content/uploads/2012/07/pc-icon.png"><img class="alignleft size-full wp-image-212" style="padding-right: 20px;" title="pc-icon" src="http://theme-fusion.com/avada/wp-content/uploads/2012/07/pc-icon.png" alt="" width="81" height="51" /></a>
+<ul class="arrow">
+<li>Cras rutrum leo at odio volutpat donec fermentum porttitor nunc maecenas quis Etharums ser quidem rerum facilis</li>
+<li>Aenean faucibus sapien a odios suspendisse venenatis euismod cras dolores amets unsers fugiats.</li>
+</ul>
+
+</div>
+[/tab]
+[tab id=2]<a href="http://themeforest.net/user/ThemeFusion"><img class="alignleft size-full wp-image-212" style="padding-bottom: 1em;" title="tab-photo" src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/tab_photo.jpg" alt="" width="126" height="106" /></a>Lid est laborum dolo rumes fugats untras. Etha rums ser quidem rerums facilis dolores nemis onis fugats vitaes nemo minima rerums unsers sadips amets. Ut enim ad minim veniam, quis nostrud neque porro quisquam Ut enim ad minim veniam, quis nostrud Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci amets uns. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla dolores ipsums fugiats voluptas amet uns.
+[/tab]
+
+[tab id=3]<a href="http://isharis.dnsalias.com/wp-content/uploads/2012/07/pc-icon.png"><img class="alignleft size-full wp-image-212" style="padding-right: 20px;" title="pc-icon" src="http://theme-fusion.com/avada/wp-content/uploads/2012/07/pc-icon.png" alt="" width="81" height="51" /></a>Lid est laborum dolo rumes fugats untras. Etha rums ser quidem rerum facilis dolores nemis onis fugats vitaes nemo minima rerums unsers sadips amets. Ut enim ad minim veniam, quis nostrud Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci amets uns.  Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips ameet quasi architecto beatae vitae dicta sunt explicabo. amets dolores.
+[/tab]
+
+[/tabs]
+<div style="margin-top: 110px;">
+
+[one_half last="no"]
+<div class="title">
+<h2>Why Choose Us?</h2>
+</div>
+<ul class="arrow">
+	<ul class="arrow">
+	<li>Fully responsive so your content will always look good on any screen size</li>
+	<li>Awesome sliders give you the opportunity to showcase your important content</li>
+	<li>Unlimited color options with a backed color picker, including the gradients</li>
+	<li>Multiple layout options for the home pages, portfolio section and blog section</li>
+	<li>We offer free support because we care about your site just as much as you do.</li>
+</ul>
+[/one_half]
+
+[one_half last="yes"]
+<div class="title">
+<h2>What Client's Say</h2>
+</div>
+[testimonials]
+[testimonial name="John Doe" company="My Company"]"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur slores amet untras vel illum qui."[/testimonial]
+[testimonial name="Luke Beck" company="Theme Fusion"]"Aliquam erat volutpat. Quisque at est id ligula facilisis laoreet eget pulvinar nibh. Suspendisse at ultrices dui. Curabitur ac felis arcu."[/testimonial]
+[/testimonials]
+[/one_half]
+
+</div></textarea></p>
+
+
+		<hr />
+
+		<h3 id="contact"><strong>Setting up the Contact page</strong></h3>
+
+		<p>Create a new page and select "Contact" page template for the contact us form to show up.</p>
+
+		<p>To add a email address and map, scroll down and look for contact info options.</p>
+
+		<hr />
+
+		<h3 id="faqs"><strong>Setting up FAQs page</strong></h3>
+
+		<p>Create a new page and select "FAQs" page template.</p>
+
+		<p>To add new FAQs, navigate to WP Admin -> FAQs page.</p>
+
+		<hr />
+
+		<h3 id="side"><strong>Setting up Side Navigation</strong></h3>
+
+		<p>To setup side navigation, create a new page and select "Side Navigation" template from the dropdown field. To show other pages on the side navigation, create new pages as child pages of the first page and make sure all of them also have "Side Navigation" as their page template.</p>
+
+		<p><img src="assets/images/side-navigation.png" alt="" /></p>
+
+		<hr />
+
+		<h3 id="portfolio"><strong>Setting up the Portfolio</strong></h3>
+
+		<p>To setup a portfolio page, create a new page and select "Portfolio One" to "Portfolio Four" from page template.</p>
+
+		<p>To add items to the portfolio, navigate to WP Admin -> Portfolio page.</p>
+
+		<hr />
+
+		<h3 id="menus"><strong>Menus</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Avada supports custom WordPress menu with two level dropdown support.</p>
+		
+		<p>To setup the menus, navigate to <strong>Apperance -> Menus</strong> page. Enter a name for your menu and add links to the menu by using the options given on the left sidebar. You can manage your menus using the drag and drop functionality. After setting up your menu, select the menu you just created from the theme locations dropdown box and hit the "Save" button.</p>
+
+		<p><img src="assets/images/menus.png" alt="" width="790" /></p>
+		
+		<hr />
+		
+		<h3 id='widgets'><strong>Custom Widgets &amp; Locations</strong> - <a href='#toc'>top</a></h3>
+		
+		<p>Avada as 2 widget areas which are for unlimited sidebars and footer. Avada comes with 10+ custom widgets. To setup sidebar and footer, navigate to <strong>Apperance -> Widgets</strong> and use the drag and drop interface to drop widgets into the sidebar or footer widget area.</p>
+
+		<p><strong>Unlimited Sidebars</strong></p>
+
+		<p>By default, Avada comes with one sidebar option, "Blog Sidebar", widgets in blog sidebar will show up as default on all pages. However, for wordpress pages, you can create custom sidebars and select a different sidebar with different pages for each widget. To create a sidebar, navigate to WP Admin -> Sidebars. After that, you can select the sidebar for your page by editing it.</p>
+
+		<p><img src="assets/images/sidebars.png" alt="" /></p>
+		
+		<hr />
+		
+		<h3 id="themeoptions"><strong>Theme Options</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The theme comes with a simple to use administration panel. You can access it by navigating to <strong>Appearance -> Theme Options</strong>. The theme options are conveniently spread over a number of tabs and each tab contains the options that pertain to a particular area of the theme.</p>
+		
+		<hr />
+		
+		<h3 id="shortcodes"><strong>Shortcodes</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Avada comes packed with 16+ shortcodes allowing you to add complex styled content with little effort.</p>
+
+		<p>The shortcodes are available under the usual formatting options on the post / page text editor.</p>
+		
+		<hr />
+		
+		<h3 id="thumbs"><strong>Post Thumbnails</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Avada  uses the WordPress Post Thumbnails function, this way you can upload one image and WordPress will automatically resize it to all the different thumbnail sizes.</p>
+		
+		<p>To set a post thumbnail for your post, go to Posts > Add New > Set Featured Image > the normal upload box will now appear, upload your image and click "Use as featured image".</p>
+		
+		<hr />
+
+		<h3 id="slideshow"><strong>Post Slideshow</strong> - <a href="#toc">top</a></h3>
+
+		<p>Slideshow works on posts / gallery and portfolio.</p>
+
+		<p>For the slideshow to show up on the posts / portfolio page, apart from the post thumbnail, upload more images to the post. It will automatically build a slideshow.</p>
+
+		<p>For videos, just paste the video embed code while editing a post in the post options box.</p>
+		 
+		<hr />
+
+		<h3 id="translate"><strong>How to Translate</strong> - <a href="#toc">top</a></h3>
+
+		<p>The translation file is located in languages folder (/wp-content/themes/Avada/languages). Edit the .po file using <a href="http://www.poedit.net/">POEdit</a>, use the translation field to make replacements.</p>
+
+		<p>From the file menu, save file with your language name e.g de_DE.po. It will generate both a .po and .mo file for your translation.</p>
+
+		<p>Next edit wp-config.php located in the root folder of wordpress and define the WPLANG prefix with your language name which should be similar to the translation file name.</p>
+		
+		<hr />
+		
+		<h3 id='css'><strong>CSS</strong> - <a href='#toc'>top</a></h3>
+		
+		<ul>
+			<li>
+				<strong>all.css</strong> - Default CSS
+			</li>
+			<li>
+				<strong>prettyPhoto.css</strong> - Located in the css folder of the theme. CSS for lightbox.
+			</li>
+			<li>
+				<strong>style.css</strong> - Placeholder stylesheet
+			</li>
+		</ul>
+		
+		<h3 id='javascript'><strong>Javascript</strong> - <a href='#toc'>top</a></h3>
+		
+		<ul>
+			<li>
+				<strong>js/jquery.cycle.js</strong> - <a href='http://www.malsup.com/jquery/cycle/'>jQuery Cycle</a> is used for slider shortcode.
+			</li>
+			<li>
+				<strong>js/jquery.prettyPhoto.js</strong> - <a href='http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/'>jQuery PrettyPhoto</a> is used for the lightboxes.
+			</li>
+		</ul>
+		
+		<hr />
+		
+		<h3 id="credits"><strong>Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>We've used the following images, icons or other files as listed.</p>
+		
+		<ul>
+			<li>jQuery - <a href="http://jquery.com/">http://jquery.com/</a></li>
+		</ul>
+
+		<hr />
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme.</p>
+
+		<p class="append-bottom alt large"><strong>Theme Fusion</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">		
+	</div><!-- end div .container -->
+</body>
+</html>

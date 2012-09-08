@@ -1,0 +1,66 @@
+Version 1.0.1
+	- Changed "MOre" to "More" from the blog page
+	- Removed style selector
+	- Added "Blog" to breadcrumbs for the blog page
+	- Made the post thumbnails height to be flexible with the "Medium Image Layout"
+	- Added color scheme option in backend
+	- Added option to disable footer widgets and footer
+	- Added option to add a favicon
+	- Added "open" option to toggle shortcode to keep it open by default
+
+	Files Changes:
+		- Edited index.php
+		- Edited footer.php
+		- Edited framework/custom_functions.php
+		- Edited css/all.css
+		- Added js/options-custom.js
+		- Edited functions.php
+		- Edited options.php
+		- Edited shortcodes.php
+		- Edited js/main.js
+
+
+Version 1.0.2
+	- Fixed a page bug options which happened when there were no slider groups created
+	- Fixed the FlexSlider plugin installation notice nags
+	
+	File Changes:
+		- Edited framework/metaboxes/page_options.php
+		- Edited functions.php
+
+Version 1.0.3
+	- Made dropcap color to change to primary color
+	- Fixed submit button on contact form not changing to color change in theme options
+	- Made flickr widget(s) work properly with complicated flickr usernames
+	- Changed the font name of Museo Slab font in all.css file to reflect exactly with the font name downloaded from fontspring
+
+	File Changes:
+		- Edited header.php
+		- Edited widgets/flickr-widget.php and widgets/flickr_footer_widget.php
+		- Edited css/all.css
+
+Version 1.0.4
+	- Some code changes to page options box
+	- Fixed a typo in portfolio one column for "All" link
+	- Added initial and maximum scale so that the responsive site works well on iphone horizontally
+	- Fixed IE issues
+	- Fixed contact form unable to send email issue
+	- Made the skills needed and categories optional
+	- Made project description optional for one column portfolio
+	- Added an option to control the testimonials slider speed
+	- Added an option to enable or disable responsiveness
+	
+	File Changes:
+		- Added css/ie.css
+		- Added css/media.css
+		- Added search.php
+		- Edited framework/views/metaboxes/page_options.php
+		- Edited css/all.css
+		- Edited portfolio-one-column.php
+		- Edited header.php
+		- Edited shortcodes.php
+		- Edited single-avada_portfolio.php
+		- Edited single.php
+		- Edited contact.php
+		- Edited index.php
+		- Edited options.php

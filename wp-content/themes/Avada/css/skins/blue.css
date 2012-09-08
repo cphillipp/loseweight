@@ -1,0 +1,84 @@
+		a:hover,
+	#nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a,
+	.footer-area ul li a:hover,
+	.side-nav li.current_page_item a,
+	.portfolio-tabs li.active a, .faq-tabs li.active a,
+	.project-content .project-info .project-info-box a:hover,
+	.about-author .title a{
+		color:#1a80b6 !important;
+	}
+	#nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a,
+	#nav ul ul,
+	.reading-box,
+	.side-nav li.current_page_item a,
+	.portfolio-tabs li.active a, .faq-tabs li.active a,
+	.tab-holder .tabs li.active a,
+	.post-content blockquote,
+	.progress-bar-content{
+		border-color:#1a80b6 !important;
+	}
+	h5.toggle.active span.arrow,
+	.post-content ul.arrow li::before,
+	.progress-bar-content{
+		background-color:#1a80b6 !important;
+	}
+	
+		.sep-boxed-pricing ul li.title-row{
+		background-color:#62a2c4 !important;
+		border-color:#62a2c4 !important;
+	}
+			.image .image-extras{
+		background-image: linear-gradient(top, #90c9e8 0%, #5aabd6 100%);
+		background-image: -o-linear-gradient(top, #90c9e8 0%, #5aabd6 100%);
+		background-image: -moz-linear-gradient(top, #90c9e8 0%, #5aabd6 100%);
+		background-image: -webkit-linear-gradient(top, #90c9e8 0%, #5aabd6 100%);
+		background-image: -ms-linear-gradient(top, #90c9e8 0%, #5aabd6 100%);
+
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #90c9e8),
+			color-stop(1, #5aabd6)
+		);
+	}
+			.reading-box .button,
+	.continue.button,
+	.portfolio-one .button,
+	.comment-submit{
+		color: #105378 !important;
+		background-image: linear-gradient(top, #90c9e8 0%, #5aabd6 100%);
+		background-image: -o-linear-gradient(top, #90c9e8 0%, #5aabd6 100%);
+		background-image: -moz-linear-gradient(top, #90c9e8 0%, #5aabd6 100%);
+		background-image: -webkit-linear-gradient(top, #90c9e8 0%, #5aabd6 100%);
+		background-image: -ms-linear-gradient(top, #90c9e8 0%, #5aabd6 100%);
+
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #90c9e8),
+			color-stop(1, #5aabd6)
+		);
+		border:1px solid #5aabd6;
+	}
+	.reading-box .button:hover,
+	.continue.button:hover,
+	.portfolio-one .button:hover,
+	.comment-submit:hover{
+		color: #105378 !important;
+		background-image: linear-gradient(top, #5aabd6 0%, #90c9e8 100%);
+		background-image: -o-linear-gradient(top, #5aabd6 0%, #90c9e8 100%);
+		background-image: -moz-linear-gradient(top, #5aabd6 0%, #90c9e8 100%);
+		background-image: -webkit-linear-gradient(top, #5aabd6 0%, #90c9e8 100%);
+		background-image: -ms-linear-gradient(top, #5aabd6 0%, #90c9e8 100%);
+
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #5aabd6),
+			color-stop(1, #90c9e8)
+		);
+		border:1px solid #5aabd6;
+	}

@@ -1,0 +1,85 @@
+		a:hover,
+	#nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a,
+	.footer-area ul li a:hover,
+	.side-nav li.current_page_item a,
+	.portfolio-tabs li.active a, .faq-tabs li.active a,
+	.project-content .project-info .project-info-box a:hover,
+	.about-author .title a{
+		color:#e10707 !important;
+	}
+	#nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a,
+	#nav ul ul,
+	.reading-box,
+	.side-nav li.current_page_item a,
+	.portfolio-tabs li.active a, .faq-tabs li.active a,
+	.tab-holder .tabs li.active a,
+	.post-content blockquote,
+	.progress-bar-content{
+		border-color:#e10707 !important;
+	}
+	h5.toggle.active span.arrow,
+	.post-content ul.arrow li::before,
+	.progress-bar-content{
+		background-color:#e10707 !important;
+	}
+	
+		.sep-boxed-pricing ul li.title-row{
+		background-color:#c40606 !important;
+		border-color:#c40606 !important;
+	}
+			.image .image-extras{
+		background-image: linear-gradient(top, #e80707 0%, #d60707 100%);
+		background-image: -o-linear-gradient(top, #e80707 0%, #d60707 100%);
+		background-image: -moz-linear-gradient(top, #e80707 0%, #d60707 100%);
+		background-image: -webkit-linear-gradient(top, #e80707 0%, #d60707 100%);
+		background-image: -ms-linear-gradient(top, #e80707 0%, #d60707 100%);
+
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #e80707),
+			color-stop(1, #d60707)
+		);
+	}
+			.reading-box .button,
+	.continue.button,
+	.portfolio-one .button,
+	.comment-submit{
+		color: #780404 !important;
+		background-image: linear-gradient(top, #e80707 0%, #d60707 100%);
+		background-image: -o-linear-gradient(top, #e80707 0%, #d60707 100%);
+		background-image: -moz-linear-gradient(top, #e80707 0%, #d60707 100%);
+		background-image: -webkit-linear-gradient(top, #e80707 0%, #d60707 100%);
+		background-image: -ms-linear-gradient(top, #e80707 0%, #d60707 100%);
+
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #e80707),
+			color-stop(1, #d60707)
+		);
+		border:1px solid #d60707;
+	}
+	.reading-box .button:hover,
+	.continue.button:hover,
+	.portfolio-one .button:hover,
+	.comment-submit:hover{
+		color: #780404 !important;
+		background-image: linear-gradient(top, #d60707 0%, #e80707 100%);
+		background-image: -o-linear-gradient(top, #d60707 0%, #e80707 100%);
+		background-image: -moz-linear-gradient(top, #d60707 0%, #e80707 100%);
+		background-image: -webkit-linear-gradient(top, #d60707 0%, #e80707 100%);
+		background-image: -ms-linear-gradient(top, #d60707 0%, #e80707 100%);
+
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #d60707),
+			color-stop(1, #e80707)
+		);
+		border:1px solid #d60707;
+	}
+	
