@@ -1986,11 +1986,3 @@ h5.toggle.active + .toggle-content{
 }
 
 /* CUSTOM */
-.select-box									{position:relative; top:-21px;}
-.footer-links								{position:relative; left:75px;}
-#footer										{background:#0D1F2B;}
-.wpcf7-form-control.wpcf7-submit			{color: white !important; background-image: linear-gradient(top, #D87500 0%, #C54200 100%); background-image: -o-linear-gradient(top, #D87500 0%, #C54200 100%); background-image: -moz-linear-gradient(top, #D87500 0%, #C54200 100%); background-image: -webkit-linear-gradient(top, #D87500 0%, #C54200 100%); background-image: -ms-linear-gradient(top, #D87500 0%, #C54200 100%); background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #D87500), color-stop(1, #C54200) ); border: 1px solid #C54200; cursor:pointer; font-weight:bold; height:32px; font:13px/32px 'PTSansBold', arial, helvetica, sans-serif; text-transform:uppercase; text-align:center; text-shadow:0 2px 0 #000; padding:0 20px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2); -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.2); box-shadow: 0 1px 1px rgba(0,0,0,0.2);}
-.wpcf7-form-control.wpcf7-submit:hover 		{color: white !important; background-image: linear-gradient(top, #C54200 0%, #D87500 100%); background-image: -o-linear-gradient(top, #C54200 0%, #D87500 100%); background-image: -moz-linear-gradient(top, #C54200 0%, #D87500 100%); background-image: -webkit-linear-gradient(top, #C54200 0%, #D87500 100%); background-image: -ms-linear-gradient(top, #C54200 0%, #D87500 100%); background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #C54200), color-stop(1, #D87500) ); border: 1px solid #C54200;}
-#nav ul li 									{margin:0 0 0 9px;}
-#nav ul a 									{padding:0 20px;}
-#wrapper #nav ul li ul li a 				{padding:0;}
