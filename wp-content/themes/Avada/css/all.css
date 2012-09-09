@@ -68,7 +68,7 @@ form, fieldset {
 #header .logo{
 	float:left;
 	overflow:hidden;
-	margin:14px 0 0;
+	margin:14px 0;
 }
 #header .logo a{
 	height:100%;
