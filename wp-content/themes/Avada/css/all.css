@@ -1986,7 +1986,7 @@ h5.toggle.active + .toggle-content{
 }
 
 /* CUSTOM */
-.weight 		{width:100%;}
-.weight th 		{text-align:left;}
-.weight td 		{padding:10px 0; border-bottom:1px solid #454545;}
+.weight 		{width:100%; border-collapse:collapse; border-left:3px solid #A0CE4E;}
+.weight th 		{padding:0 10px; text-align:left;}
+.weight td 		{padding:5px; border-bottom:1px solid #AEAEAE;}
 
