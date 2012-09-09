@@ -1986,3 +1986,7 @@ h5.toggle.active + .toggle-content{
 }
 
 /* CUSTOM */
+.weight 		{width:100%;}
+.weight th 		{text-align:left;}
+.weight td 		{padding:10px 0; border-bottom:1px solid #454545;}
+
