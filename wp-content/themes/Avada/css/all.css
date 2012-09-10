@@ -1989,5 +1989,5 @@ h5.toggle.active + .toggle-content{
 .weight 		{width:100%; border-collapse:collapse; border-left:3px solid #A0CE4E;}
 .weight th 		{padding:10px; text-align:left; border-bottom:1px solid #666;}
 .weight td 		{padding:5px; border-bottom:1px solid #AEAEAE;}
-..share-box 	{height: 0px; overflow:hidden;}
+.share-box 		{height: 0px; overflow:hidden;}
 
